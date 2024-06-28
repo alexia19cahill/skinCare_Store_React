@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import llamadoPost from '../services/llamados'
 
 function Formulario() {
   const [user, setUser] = useState("");
@@ -13,25 +13,25 @@ function Formulario() {
         contrasena: contrasena,
       };
 
-      axios.post("http://localhost:3001/user", userDatos)
-        .then(response => {
-          console.log("Usuario registrado", response);
-        })
-        .catch(error => {
-          console.error("lo siento amiguito hubo un errorcito", error);
-        });
+     
+      llamadoPost(userDatos)
+
+
+
     }
   };
 
   return (
-    <div>
+    <div id="formulario">
       <h1>REGISTRAR</h1>
+      <div>
       <input id='user' name="myInput"  placeholder='Ingrese nombre'value={user}onChange={e => setUser(e.target.value)}/>
       <input id='contrasena' name="myInput" placeholder='Ingrese contraseña' type="password" value={contrasena} onChange={e => setContrasena(e.target.value)}/>
       <button id='boton' onClick={postdatos}>Registro</button>
       <button id='boton'>
         <Link to='/login'>Ir al Login</Link>
       </button>
+      </div>
       <h1></h1>
     </div>
   );
