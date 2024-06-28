@@ -1,9 +1,23 @@
 
-
-function home() {
+import  Navbarprin from '../components/navbarprin.jsx'
+import Carrucel from '../components/carrucel.jsx'
+import Cardproduc from '../components/cardproduc.jsx'
+function ColorSc () {
   return (
-    <div>home</div>
+       
+
+    <div>
+      <Navbarprin />
+      <Carrucel/> 
+      <br />
+      <br />
+      <Cardproduc/> 
+    </div>
+
+  
+
+
   )
 }
 
-export default home
+export default ColorSc

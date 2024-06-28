@@ -1,9 +1,29 @@
 {
-    "user": [
-      {
-        "id": "73b4",
-        "nombre": "alexia",
-        "contrasena": "1234"
-      }
-    ]
-  }
+  "user": [
+    {
+      "id": "73b4",
+      "nombre": "alexia",
+      "contrasena": "1234"
+    },
+    {
+      "id": "85f5",
+      "nombre": "barry",
+      "contrasena": "123456789"
+    },
+    {
+      "id": "2472",
+      "nombre": "carlitos",
+      "contrasena": "carlitos"
+    },
+    {
+      "id": "df6d",
+      "nombre": "carlitos",
+      "contrasena": "carlitos"
+    },
+    {
+      "id": "d8cc",
+      "nombre": "alexia",
+      "contrasena": "1234"
+    }
+  ]
+}
