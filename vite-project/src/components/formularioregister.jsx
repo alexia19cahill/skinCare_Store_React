@@ -23,16 +23,20 @@ function Formulario() {
 
   return (
     <div id="formulario">
-      <h1>REGISTRAR</h1>
+      <h1 id="movertext">REGISTRAR</h1>
       <div>
+      <br />
       <input id='user' name="myInput"  placeholder='Ingrese nombre'value={user}onChange={e => setUser(e.target.value)}/>
+      <br /><br />
+      
       <input id='contrasena' name="myInput" placeholder='Ingrese contraseña' type="password" value={contrasena} onChange={e => setContrasena(e.target.value)}/>
-      <button id='boton' onClick={postdatos}>Registro</button>
-      <button id='boton'>
-        <Link to='/login'>Ir al Login</Link>
-      </button>
+      <br /> <br />
+      <button id='boton' onClick={postdatos}>Registrar</button> 
+      <br /> <br />
+      <h3 id="text">You have an account?</h3>
+      <Link id="link" to='/login'>Ir al Login</Link>
       </div>
-      <h1></h1>
+  
     </div>
   );
 }

@@ -24,6 +24,21 @@
       "id": "d8cc",
       "nombre": "alexia",
       "contrasena": "1234"
+    },
+    {
+      "id": "e572",
+      "producto": "soap",
+      "precio": "2000"
+    },
+    {
+      "id": "ffc5",
+      "producto": "soap",
+      "precio": "2000"
+    },
+    {
+      "id": "4022",
+      "producto": "soap",
+      "precio": "2000"
     }
   ]
 }

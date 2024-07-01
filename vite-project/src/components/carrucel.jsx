@@ -15,7 +15,8 @@ function Carrucel() {
       <Carousel.Item>
         <img id='image'
           className="d-block w-100"
-          src="https://www.lavanguardia.com/files/image_948_465/files/fp/uploads/2021/02/16/602bd006d3744.r_d.1963-1506-2453.jpeg"
+          
+          src="https://phantom-telva.unidadeditorial.es/eada5ff25cbf460299dab2addb936219/crop/0x58/2045x1207/resize/1280/f/webp/assets/multimedia/imagenes/2020/11/16/16055349700150.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -26,7 +27,7 @@ function Carrucel() {
       <Carousel.Item>
         <img id='image'
           className="d-block w-100"
-          src="https://lifesolutions.com.pe/wp-content/uploads/2021/09/TIPOS-DE-PIELES.jpg"
+          src="https://assets.vogue.com/photos/6541556662908d1adc51b8ca/master/w_1920,c_limit/slide%20(1).jpg"
           alt="Third slide"
         />
         <Carousel.Caption>

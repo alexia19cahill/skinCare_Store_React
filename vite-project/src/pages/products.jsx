@@ -1,11 +1,12 @@
+import Products from "../components/products"
 
 
-function products() {
+function producto() {
   return (
-    <div>
-      
-    </div>
+    
+      <Products/>
+   
   )
 }
 
-export default products
+export default producto
