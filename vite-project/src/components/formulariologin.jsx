@@ -21,7 +21,7 @@ function Formulariologin() {
       });
   }, []);
 
-  const getdatos = (e) => {
+  const getdatosr = (e) => {
     e.preventDefault();
     if (user !== "" && contrasena !== "") {
       let found = false;  
@@ -43,14 +43,19 @@ function Formulariologin() {
   };
 
   return (
-    <div>
-      <h1>Login</h1>
+    <div id="formulario">
+      <h1 id="movertext">LOGIN</h1>
+      <br />
       <input id='user'name="myInput"placeholder='Ingrese nombre'value={user} onChange={e => setUser(e.target.value)}/>
+      <br /><br />
       <input id='contrasena'name="myInput"placeholder='Ingrese contraseña'type="password"value={contrasena}onChange={e => setContrasena(e.target.value)}/>
-      <button id='boton' onClick={getdatos}>Login</button>
-      <button id='boton'>
-        <Link to='/register'>Ir a Register</Link>
-      </button>
+      <br /><br />
+      <button id='boton' onClick={getdatosr}>Login</button>
+      <br /> <br />
+      <h3 id="text">Dont have an account?</h3>
+        <Link id="link" to='/register'>Ir a Register</Link>
+
+     
       <h1></h1>
     </div>
     

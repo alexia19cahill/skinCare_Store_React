@@ -16,4 +16,21 @@ function llamadoPost(userDatos) {
 
 }
 
-export default llamadoPost
+
+function llamadoGet(getdatos) {
+
+
+  axios.get("http://localhost:3001/user",getdatos )
+  .then(response => {
+       alert("Usuario registrado ");
+    console.log("Usuario registrado", response);
+  })
+  .catch(error => {
+    console.error("lo siento amiguito hubo un errorcito", error);
+  });
+
+
+
+}
+
+export default llamadoPost;llamadoGet;
