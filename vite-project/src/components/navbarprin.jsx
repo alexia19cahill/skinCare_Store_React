@@ -1,11 +1,14 @@
-
+// este compoenete es el nav que se muestra en la pagina principal
+// estas son las importaiones de bootstrap
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+// importacion de las hojas de estilos
 import "../App.css"
+// importacion del link desde react
 import { Link } from "react-router-dom";
-
+// esta funcion es para el nav
 function navbarprin() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">

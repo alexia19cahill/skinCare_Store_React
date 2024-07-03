@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../App.css"
-
+// este componente es para crear el formulario para que el usuario se loguee 
 function Formulariologin() {
   const [user, setUser] = useState("");
   const [contrasena, setContrasena] = useState("");

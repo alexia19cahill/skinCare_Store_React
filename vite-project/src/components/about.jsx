@@ -1,5 +1,5 @@
 
-
+// este componente es para que el usuario conozca sobre la pagina
 
 import Card from 'react-bootstrap/Card';
 
