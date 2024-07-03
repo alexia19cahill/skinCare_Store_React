@@ -1,36 +1,48 @@
 import axios from "axios";
 
-function llamadoPost(userDatos) {
-
-
-    axios.post("http://localhost:3001/user", userDatos)
-    .then(response => {
-         alert("Usuario registrado ");
-      console.log("Usuario registrado", response);
-    })
-    .catch(error => {
-      console.error("lo siento amiguito hubo un errorcito", error);
-    });
-
-
-
-}
-
-
-function llamadoGet(getdatos) {
-
-
-  axios.get("http://localhost:3001/user",getdatos )
-  .then(response => {
-       alert("Usuario registrado ");
-    console.log("Usuario registrado", response);
-  })
-  .catch(error => {
+async function llamadoPost(datosProductos) {
+  try {
+    const response = await axios.post("http://localhost:3001/productos", datosProductos);
+    console.log("funciona", response);
+  } catch (error) {
     console.error("lo siento amiguito hubo un errorcito", error);
-  });
-
-
-
+  }
 }
 
-export default llamadoPost;llamadoGet;
+const apiUrl = "http://localhost:3001/user";
+
+async function llamadoGet() {
+  try {
+    const response = await axios.get(apiUrl);
+    return response.data;
+  } catch (error) {
+    console.error("error", error);
+    return null; 
+  }
+}
+
+async function llamadoPull(productosData) {
+  try {
+    const response = await axios({
+      method: 'post',
+      url: 'http://localhost:3001/user',
+      data: productosData,
+    });
+    console.log("funciona el pull", response);
+  } catch (error) {
+    console.error(" error ", error);
+  }
+}
+
+async function llamadoDelete(postIdToDelete) {
+console.log(postIdToDelete);
+  try {
+    const response = await axios.delete(`http://localhost:3001/productos/${postIdToDelete}`);
+    console.log("Producto eliminado", response);
+  } catch (error) {
+    console.error("errror", error);
+  }
+}
+
+
+export { llamadoPost, llamadoGet, llamadoPull ,llamadoDelete};

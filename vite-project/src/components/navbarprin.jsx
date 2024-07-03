@@ -15,7 +15,7 @@ function navbarprin() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">OFFERS</Nav.Link>
+          
            <Link id='lrcolor' to='/about'>ABOUT US</Link>
             <NavDropdown title="CATEGORIES" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">FACE</NavDropdown.Item>
@@ -24,11 +24,14 @@ function navbarprin() {
               <NavDropdown.Divider />
             </NavDropdown>
             <NavDropdown title="ACCOUNT" id="basic-nav-dropdown">
+            
               <Link id='lrcolor' to='/login'>LOGIN</Link>
              <br />
               <Link id='lrcolor' to='/register'>REGISTER</Link>
+             
               <NavDropdown.Divider />
             </NavDropdown>
+              <Link id='lrcolor' to='/products'>ADMIN</Link>
          
           </Nav>
         </Navbar.Collapse>
