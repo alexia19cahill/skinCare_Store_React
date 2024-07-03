@@ -23,6 +23,7 @@ function routing() {
                  <Route path='/about' element={<About />}/>
                  <Route path='/offers' element={<Offers />}/>
                  <Route path='/products' element={<Products/>}/>
+                 <Route path='/produpost' element={<Products/>}/>
                  
             </Routes>
 

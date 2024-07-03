@@ -1,37 +1,76 @@
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { llamadoPost, llamadoDelete } from "../services/llamados";
 
-import { useState } from "react";
-import llamadoGet from '../services/llamados'
 function Products() {
+  const [producto, setProducto] = useState("");
+  const [precio, setPrecio] = useState("");
+  const [informacion, setinformacion] = useState("");
+  const [datos, setDatos] = useState([]);
 
-  const [producto, setproducto] = useState("");
-const [precio, setprecio] = useState("");
-
-const getdatos = () => {
-  if (producto !== "" && precio !== "") {
-    const productosDatos = {
-      producto: producto,
-      precio: precio,
+  useEffect(() => {
+    const mostrarProductos = async () => {
+      try {
+        const response = await axios.get("http://localhost:3001/productos");
+        setDatos(response.data);
+        console.log("funciona", response.data);
+      } catch (error) {
+        console.error("Hubo un error", error);
+      }
     };
 
-   
-    llamadoGet(productosDatos)
+    mostrarProductos();
+  }, []);
+
+  const postDatos = async () => {
+    if (producto !== "" && precio !== "") {
+      const productosDatos = {
+        producto: producto,
+        precio: precio,
+        informacion:informacion,
+      };
+      console.log(productosDatos);
+      await llamadoPost(productosDatos);
+      actualizarProductos();
+    }
+  };
+
+  const eliminarProducto = async (id) => {
 
 
+   llamadoDelete(id)
+  };
 
-  }
-};
-
+  const actualizarProductos = async () => {
+    try {
+      const response = await axios.get("http://localhost:3001/productos");
+      setDatos(response.data);
+    } catch (error) {
+      console.error(" error", error);
+    }
+  };
 
   return (
-    <div>
-   <input type="file" />
-<input id='producto' name="myInput" placeholder='Nombre de producto' type="" value={producto} onChange={e => setproducto(e.target.value)}/>
-<input id='precio' name="myInput" placeholder='precio' type="" value={precio} onChange={e => setprecio(e.target.value)}/>
-<button id='boton' onClick={getdatos}>enter</button>
+    <div id="formulario">
+    <>
+
+      <input type="file" />
+      <input id="producto" name="myInput" placeholder="Nombre de producto" value={producto} onChange={e => setProducto(e.target.value)} />
+      <br /><br />
+      <input id="precio" name="myInput" placeholder="Precio" value={precio} onChange={e => setPrecio(e.target.value)} />
+      <br /><br />
+      <input id="informacion" name="myInput" placeholder="información" value={informacion} onChange={e => setinformacion(e.target.value)} />
+      <button id="boton" onClick={postDatos}>Enter</button>
+      {datos.map((item, index) => (
+        <div key={index}>
+          <p>Producto: {item.producto}</p>
+          <p>Precio: {item.precio}</p>
+          <button onClick={() => eliminarProducto(item.id)}>Eliminar</button>
+        </div>
+      ))}
+    </>
     </div>
-  )
-  
+  );
 }
 
-export default Products
-
+export default Products;
