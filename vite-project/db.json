@@ -6,5 +6,48 @@
       "contrasena": "1234"
     }
   ],
-  "productos": []
+  "productos": [
+    {
+      "id": "4f1c",
+      "producto": "serum",
+      "precio": "12000",
+      "informacion": "njejdjed",
+      "imagenurl": "https://hibeautycr.com/cdn/shop/files/IMG-8492_1100x.jpg?v=1697258379"
+    },
+    {
+      "id": "1cbc",
+      "producto": "serum",
+      "precio": "12000",
+      "informacion": "njejdjed",
+      "imagenurl": "https://hibeautycr.com/cdn/shop/files/IMG-8492_1100x.jpg?v=1697258379"
+    },
+    {
+      "id": "e086",
+      "producto": "serum",
+      "precio": "12000",
+      "informacion": "njejdjed",
+      "imagenurl": "https://hibeautycr.com/cdn/shop/files/IMG-8492_1100x.jpg?v=1697258379"
+    },
+    {
+      "id": "81af",
+      "producto": "serum",
+      "precio": "12000",
+      "informacion": "njejdjed",
+      "imagenurl": "https://hibeautycr.com/cdn/shop/files/IMG-8492_1100x.jpg?v=1697258379"
+    },
+    {
+      "id": "35a1",
+      "producto": "serum",
+      "precio": "12000",
+      "informacion": "njejdjed",
+      "imagenurl": "https://hibeautycr.com/cdn/shop/files/IMG-8492_1100x.jpg?v=1697258379"
+    },
+    {
+      "id": "0a63",
+      "producto": "serum",
+      "precio": "12000",
+      "informacion": "njejdjed",
+      "imagenurl": "https://hibeautycr.com/cdn/shop/files/IMG-8492_1100x.jpg?v=1697258379"
+    }
+  ]
 }

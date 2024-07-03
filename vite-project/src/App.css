@@ -96,7 +96,11 @@ text-align: center;
   margin-left: 15%;
 } */
 #tamano{
- width: 100px;
-  height: 100px;
+ width: 200px;
+  height: 200px;
 
+}
+#cardtamano{
+width: 200px;
+height: 200px;
 }
