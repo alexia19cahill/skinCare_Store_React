@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 function About() {
   return (
     <Card id='card'>
-      <Card.Img id='images' variant="top" src="https://static.tnn.in/thumb/msid-100152449,thumbsize-396219,width-1280,height-720,resizemode-75/100152449.jpg" />
+      <Card.Img id='images' variant="top" src="https://rembeauty.com/cdn/shop/files/HP_Desktop_-_bronzer.jpg?v=1718232031&width=1920" />
       <Card.Body>
         <Card.Title> ABOUT US </Card.Title>
         <Card.Text>

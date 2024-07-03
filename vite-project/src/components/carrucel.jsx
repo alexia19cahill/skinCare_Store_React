@@ -27,7 +27,7 @@ function Carrucel() {
       <Carousel.Item>
         <img id='image'
           className="d-block w-100"
-          src="https://assets.vogue.com/photos/6541556662908d1adc51b8ca/master/w_1920,c_limit/slide%20(1).jpg"
+          src="https://rembeauty.com/cdn/shop/files/HP_Desktop_-_bronzer.jpg?v=1718232031&width=1920"
           alt="Third slide"
         />
         <Carousel.Caption>
