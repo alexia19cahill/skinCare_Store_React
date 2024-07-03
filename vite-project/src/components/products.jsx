@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { llamadoPost, llamadoDelete } from "../services/llamados";
-
+import "../index.css"
 function Products() {
   const [producto, setProducto] = useState("");
   const [precio, setPrecio] = useState("");
   const [informacion, setinformacion] = useState("");
+    const [imagenurl, setimgenurl] = useState("");
   const [datos, setDatos] = useState([]);
 
   useEffect(() => {
@@ -28,6 +29,7 @@ function Products() {
         producto: producto,
         precio: precio,
         informacion:informacion,
+        imagenurl:imagenurl,
       };
       console.log(productosDatos);
       await llamadoPost(productosDatos);
@@ -51,20 +53,23 @@ function Products() {
   };
 
   return (
-    <div id="formulario">
+    <div id="formulario2">
     <>
 
-      <input type="file" />
+    <input id="imagenurl" name="myInput" placeholder="URL de la img" value={imagenurl} onChange={e => setimgenurl(e.target.value)} />
+      <br /><br />
       <input id="producto" name="myInput" placeholder="Nombre de producto" value={producto} onChange={e => setProducto(e.target.value)} />
       <br /><br />
       <input id="precio" name="myInput" placeholder="Precio" value={precio} onChange={e => setPrecio(e.target.value)} />
       <br /><br />
       <input id="informacion" name="myInput" placeholder="información" value={informacion} onChange={e => setinformacion(e.target.value)} />
-      <button id="boton" onClick={postDatos}>Enter</button>
+      <br /><br />
+      <button id="boton2" onClick={postDatos}>enviar</button>
       {datos.map((item, index) => (
         <div key={index}>
           <p>Producto: {item.producto}</p>
           <p>Precio: {item.precio}</p>
+          <div id="tamano"><img src= {item.imagenurl}alt="" /></div>
           <button onClick={() => eliminarProducto(item.id)}>Eliminar</button>
         </div>
       ))}

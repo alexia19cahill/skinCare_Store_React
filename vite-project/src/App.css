@@ -6,10 +6,12 @@
   transform: translate(-50%, -50%);
   width: 299px;
   height: 330px;
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(255, 254, 254);
   border-radius: 10px;
   border: solid rgb(5, 19, 45) 3px;
 }
+
+
 
 #lrcolor{
 
@@ -74,5 +76,27 @@ margin-left: 29%;
 #card{
 
 text-align: center;
+
+}
+
+/* #producto{
+
+  margin-left: 15%;
+}
+#precio{
+
+  margin-left: 15%;
+}
+#informacion{
+
+  margin-left: 15%;
+}
+#imagenurl{
+
+  margin-left: 15%;
+} */
+#tamano{
+ width: 100px;
+  height: 100px;
 
 }
