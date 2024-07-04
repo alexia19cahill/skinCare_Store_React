@@ -45,4 +45,13 @@ console.log(postIdToDelete);
 }
 
 
-export { llamadoPost, llamadoGet, llamadoPull ,llamadoDelete};
+ export const llamadoPut = async (id,productData) => {
+ console.log(id,productData);
+   try {
+     await axios.put(`http://localhost:3001/productos/${id}`,productData);
+   } catch (error) {
+     console.error("error", error);
+   }
+ };
+
+export { llamadoPost, llamadoGet, llamadoPull ,llamadoDelete,};
