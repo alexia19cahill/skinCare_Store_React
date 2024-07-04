@@ -1,5 +1,5 @@
 
-import  Navbarprin from '../components/navbarprin.jsx'
+
 import Carrucel from '../components/carrucel.jsx'
 import Cardproduc from '../components/cardproduc.jsx'
 function ColorSc () {
@@ -7,7 +7,7 @@ function ColorSc () {
        
 
     <div>
-      <Navbarprin />
+      
       <Carrucel/> 
       <br />
       <br />

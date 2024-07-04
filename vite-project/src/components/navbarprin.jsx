@@ -5,7 +5,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 // importacion de las hojas de estilos
-import "../App.css"
+
+import "../styles/home.css"
 // importacion del link desde react
 import { Link } from "react-router-dom";
 // esta funcion es para el nav
