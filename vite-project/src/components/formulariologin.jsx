@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../App.css"
-// este componente es para crear el formulario para que el usuario se loguee 
+import Swal from "sweetalert2";
+
 function Formulariologin() {
   const [user, setUser] = useState("");
   const [contrasena, setContrasena] = useState("");
@@ -23,6 +24,11 @@ function Formulariologin() {
 
   const getdatos = (e) => {
     e.preventDefault();
+    if (user.trim() === "" || contrasena.trim() === "") {
+      Swal.fire("no puede tener espacios vacios");
+      return;
+    }
+
     if (user !== "" && contrasena !== "") {
       let found = false;  
       datos.forEach(dato => {
@@ -37,7 +43,7 @@ function Formulariologin() {
         alert("Usuario logueado");
         navigate('/home'); 
       } else {
-        alert("Usuario o contraseña incorrectos");
+        Swal.fire("Usuario o contraseña incorrectos");
       }
     }
   };
