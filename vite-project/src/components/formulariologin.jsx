@@ -40,7 +40,7 @@ function Formulariologin() {
       setUserFound(found);
 
       if (found) {
-        alert("Usuario logueado");
+         Swal.fire("datos correctos");
         navigate('/home'); 
       } else {
         Swal.fire("Usuario o contraseña incorrectos");

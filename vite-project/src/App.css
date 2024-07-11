@@ -1,0 +1,42 @@
+.containerfooter{
+
+  background-color: rgb(232, 186, 186);
+ 
+  height: 200px;
+ 
+}
+
+#botonbuscar{
+
+  background-color: rgb(241, 200, 200);
+  width: 100px;
+  border: rgb(195, 132, 132) solid 1px;
+  margin-left: 2px;
+}
+#botonenviar{
+
+  background-color: rgb(193, 150, 150);
+  margin-left: 22%;
+  border: white solid 1px;
+  width: 120px;
+  height: 30px;
+  border-radius: 10%;
+}
+
+#botoneditar{
+
+  background-color: rgb(193, 150, 150);
+  border: white solid 1px;
+  width: 100px;
+  height: 25px;
+  border-radius: 10%;
+}
+#botoneliminar{
+
+  background-color: rgb(193, 150, 150);
+  border: white solid 1px;
+  width: 100px;
+  height: 25px;
+  border-radius: 10%;
+  margin-left: 10%;
+}

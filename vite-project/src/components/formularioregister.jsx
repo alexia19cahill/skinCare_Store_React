@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { llamadoPost } from "../services/llamados";
+import { llamadoPull } from "../services/llamados";
 import Swal from "sweetalert2";
 
 function Formulario() {
@@ -12,13 +12,15 @@ function Formulario() {
       Swal.fire("no puede tener espacios  vacios");
       return;
     }
-    if (user !== "" && contrasena !== "") {
+    
+    if (user !== "" && contrasena !== "") { 
+    Swal.fire("Registro exitoso");
       const userDatos = {
         nombre: user,
         contrasena: contrasena,
       };
 
-      llamadoPost(userDatos);
+      llamadoPull(userDatos);
     }
   };
   
