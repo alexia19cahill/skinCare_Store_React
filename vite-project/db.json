@@ -4,6 +4,21 @@
       "id": "73b4",
       "nombre": "alexia",
       "contrasena": "1234"
+    },
+    {
+      "id": "26e9",
+      "nombre": "prueba",
+      "contrasena": "1234"
+    },
+    {
+      "id": "3c5b",
+      "nombre": "nuevo",
+      "contrasena": "1234"
+    },
+    {
+      "id": "02f1",
+      "nombre": "prueba",
+      "contrasena": "12345"
     }
   ],
   "productos": [
@@ -34,6 +49,20 @@
       "precio": "40$",
       "informacion": "A weightless, long-lasting liquid blush that blends and builds beautifully for a soft, healthy flush. Available in both matte and dewy finishes.",
       "imagenurl": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Liquid-Blush-Matte-BLISS-SKU.jpg?v=1639020840"
+    },
+    {
+      "id": "5bde",
+      "producto": "SETTING POWERD",
+      "precio": "50$",
+      "informacion": "A silky, do-it-all setting powder to smooth, blur, and control shine for a soft natural finish and all-day comfort.",
+      "imagenurl": "https://www.rarebeauty.com/cdn/shop/products/Setting-Powder-Light-SKU.jpg?v=1639180706"
+    },
+    {
+      "id": "9c53",
+      "producto": "lip",
+      "precio": "50",
+      "informacion": "An innovative lip jelly that transforms into a lightweight oil, starting off glossy, then leaving lips tinted while staying comfortable—never sticky—all day.",
+      "imagenurl": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/soft-pinch-tinted-lip-oil-serenity-1440x1952.jpg?v=1679094329"
     }
   ]
 }

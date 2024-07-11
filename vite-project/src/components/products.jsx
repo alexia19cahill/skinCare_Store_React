@@ -1,5 +1,5 @@
 //importar de bibliotecas de React y Botstrap
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import axios from "axios";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -152,7 +152,7 @@ function Products() {
           <br /><br />
           <input id="informacion" name="myInput" placeholder="Información" value={informacion} onChange={e => setInformacion(e.target.value)} />
           <br /><br />
-          <button id="boton2" onClick={postDatos}>Enviar</button>
+          <button id="botonenviar" onClick={postDatos}>Enviar</button>
           </div>
         </div>
       </div>
@@ -175,8 +175,8 @@ function Products() {
                   <p>informacion: {item.informacion}</p>
                 </Card.Text>
               <Card.Body>
-                <button onClick={() => eliminarProducto(item.id)}>Eliminar</button>
-                <button onClick={() => editarProducto(item.id)}>Editar</button>
+                <button id="botoneditar" onClick={() => eliminarProducto(item.id)}>Eliminar</button>
+                <button id="botoneliminar" onClick={() => editarProducto(item.id)}>Editar</button>
               </Card.Body>
             </Card>
           </div>
