@@ -8,11 +8,32 @@
   ],
   "productos": [
     {
-      "producto": "pr",
-      "precio": "123",
-      "informacion": "123",
-      "imagenurl": "https://www.rarebeauty.com/cdn/shop/products/soft-pinch-tinted-lip-oil-hope-1440x1952.jpg?v=1679094432",
-      "id": "d64b"
+      "id": "6c2f",
+      "producto": "LUMINIZER",
+      "precio": "60$",
+      "informacion": " A silky, second-skin liquid highlighter that creates an instantly dewy, buildable glow while also nourishing skin so it looks on the bright side all day.",
+      "imagenurl": " https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Luminizer-Transcend-SKU_2030b5e6-f895-41f6-bc06-dfdec52519bb.jpg?v=1666327149"
+    },
+    {
+      "id": "eca7",
+      "producto": "LIP OLI",
+      "precio": "24$",
+      "informacion": " An innovative lip jelly that transforms into a lightweight oil, starting off glossy, then leaving lips tinted while staying comfortable—never sticky—all day.",
+      "imagenurl": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/soft-pinch-tinted-lip-oil-serenity-1440x1952.jpg?v=1679094329"
+    },
+    {
+      "id": "7224",
+      "producto": "BRONZER",
+      "precio": "40$",
+      "informacion": "A breakthrough bronzing stick that creates an instant sun-kissed glow and blends seamlessly for a second-skin finish—just swipe on, blend, and go!",
+      "imagenurl": " https://cdn.shopify.com/s/files/1/0314/1143/7703/products/warm-wishes-effortless-bronzer-stick-ecomm-bright-side-1440x1952.jpg?v=1679684558"
+    },
+    {
+      "id": "6dfd",
+      "producto": "LIQUID BLUSH",
+      "precio": "40$",
+      "informacion": "A weightless, long-lasting liquid blush that blends and builds beautifully for a soft, healthy flush. Available in both matte and dewy finishes.",
+      "imagenurl": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Liquid-Blush-Matte-BLISS-SKU.jpg?v=1639020840"
     }
   ]
 }

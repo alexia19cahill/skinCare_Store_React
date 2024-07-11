@@ -1,6 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
 function Carrucel() {
   return (
+
+    <>
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <img id='image'
@@ -38,6 +40,11 @@ function Carrucel() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    
+
+    
+    </>
+
   );
 }
 
